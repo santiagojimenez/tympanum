@@ -20,7 +20,11 @@ if ($loop->have_posts()) : ?>
 	<section class="highlight-episode">
 		<?php while ($loop->have_posts()) : $loop->the_post() ?>
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-				<a href="<?php the_permalink(); ?>" class="highlight-episode_image"><?php if (has_post_thumbnail()) : ?><?php the_post_thumbnail('tympanum-m') ?><?php endif; ?></a>
+				<a href="<?php the_permalink(); ?>" class="highlight-episode_image">
+					<?php if (has_post_thumbnail()) : ?>
+						<img src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'tympanum-m') ?>" class="wp-post-image" srcset="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'tympanum-m') ?> 360w, <?php echo get_the_post_thumbnail_url(get_the_ID(), 'tympanum-xl') ?> 1400w" sizes="(max-width: 768px) 360px, 100vw" />
+					<?php endif; ?>
+				</a>
 				<div class="highlight-episode_data">
 					<?php if (wp_get_post_terms($post->ID, 'podcast')) : ?>
 						<a href="<?php echo get_term_link(wp_get_post_terms($post->ID, 'podcast')[0]->term_id, 'podcast'); ?>" class="highlight-episode_data_podcast"><?php echo wp_get_post_terms($post->ID, 'podcast')[0]->name; ?></a>

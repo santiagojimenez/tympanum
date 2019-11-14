@@ -52,6 +52,7 @@ function tympanum_thumbnails()
     add_image_size('tympanum-s', 165, 165, true);
     add_image_size('tympanum-m', 360, 360, true);
     add_image_size('tympanum-l', 660, 660, true);
+    add_image_size('tympanum-xl', 1400, 1000, true);
 }
 
 add_action('after_setup_theme', 'tympanum_thumbnails');
@@ -269,13 +270,17 @@ add_action('after_setup_theme', 'theme_slug_setup');
 
 function tympanum_navigation()
 {
-    if (get_previous_posts_link() || get_next_posts_link()) : ?> <nav class="pagination"> <?php global $wp_query;
-                                                                                                    $big = 999999999;
-                                                                                                    echo paginate_links(array(
-                                                                                                        'base' => str_replace($big, '%#%', esc_url(get_pagenum_link($big))),
-                                                                                                        'current' => max(1, get_query_var('paged')),
-                                                                                                        'total' => $wp_query->max_num_pages,
-                                                                                                        'type' => 'list'
-                                                                                                    ));
-                                                                                                    ?></nav><?php endif;
-            }
+    if (get_previous_posts_link() || get_next_posts_link()) : ?>
+        <nav class="pagination">
+            <?php global $wp_query;
+                    $big = 999999999;
+                    echo paginate_links(array(
+                        'base' => str_replace($big, '%#%', esc_url(get_pagenum_link($big))),
+                        'current' => max(1, get_query_var('paged')),
+                        'total' => $wp_query->max_num_pages,
+                        'type' => 'list'
+                    ));
+                    ?>
+        </nav>
+<?php endif;
+}

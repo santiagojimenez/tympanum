@@ -7,11 +7,14 @@
  * @license    GNU General Public License v3
  * @version    0.2.0
  * @link       https://tympanum.dev
- */ ?>
+ */
+?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<?php if (has_post_thumbnail()) : ?>
 		<div class="loop-episodes_episode_img">
-			<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('tympanum-s') ?></a>
+			<a href="<?php the_permalink(); ?>">
+				<img src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'tympanum-m') ?>" class="wp-post-image" srcset="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'tympanum-s') ?> 165w, <?php echo get_the_post_thumbnail_url(get_the_ID(), 'tympanum-m') ?> 360w" sizes="(max-width: 768px) 157.5px, 281.25px" />
+			</a>
 		</div>
 	<?php endif; ?>
 	<div class="loop-episodes_episode_data">

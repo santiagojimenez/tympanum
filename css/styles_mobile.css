@@ -920,11 +920,11 @@ section.loop-posts article .archive-item-title {
 .single-episode .single-episode_wrap .single-episode_background {
   bottom: 0;
   height: 100%;
-  left: 0;
+  left: -30px;
   position: fixed;
-  right: 0;
+  right: -30px;
   top: 0;
-  width: 100%;
+  width: calc(100% + 60px);
 }
 
 .single-episode .single-episode_wrap .single-episode_background img {

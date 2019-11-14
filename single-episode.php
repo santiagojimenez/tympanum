@@ -35,7 +35,7 @@ $tympanum_episode_vars = $tympanum_episode_vars->get_vars();
 					<?php endif; ?>
 					<?php if (has_post_thumbnail()) : ?>
 						<div class="single-episode_thumb">
-							<?php the_post_thumbnail('tympanum-m'); ?>
+							<img src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'tympanum-l') ?>" class="wp-post-image" width="660" height="660" />
 						</div>
 					<?php endif ?>
 					<div class="single-episode_description">

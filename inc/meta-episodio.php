@@ -81,7 +81,7 @@ class Tympanum_Episode_Vars
 	}
 	function get_podcast_logo_src()
 	{
-		return wp_get_attachment_url($this->podcast_logo_id);
+		return wp_get_attachment_image_src($this->podcast_logo_id, 'tympanum-s')[0];
 	}
 	function get_episode_panel_audio_attachment_message()
 	{

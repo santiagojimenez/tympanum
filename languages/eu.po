@@ -1,0 +1,206 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Tympanum\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-11-19 13:49+0000\n"
+"PO-Revision-Date: 2019-11-19 14:03+0000\n"
+"Last-Translator: xantifakir <xantifakir@gmail.com>\n"
+"Language-Team: \n"
+"Language: eu\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.3.1; wp-5.3"
+
+#: functions.php:174
+msgid "Actualizar podcast"
+msgstr ""
+
+#: index.php:23
+msgid "Anterior"
+msgstr ""
+
+#: inc/meta-episodio.php:181
+msgid "Audio externo: pega aquí la URL de tu audio"
+msgstr ""
+
+#: inc/meta-episodio.php:170
+msgid "Audio interno: sube tu fichero de audio"
+msgstr ""
+
+#: functions.php:103 functions.php:104
+msgid "Añadir episodio"
+msgstr ""
+
+#: functions.php:175
+msgid "Añadir podcast"
+msgstr ""
+
+#: footer.php:19
+msgid "Basado en Tympanum"
+msgstr ""
+
+#: searchform.php:12 searchform.php:14
+msgid "Buscar"
+msgstr ""
+
+#: functions.php:169
+msgid "Buscar podcasts"
+msgstr ""
+
+#: functions.php:173
+msgid "Editar podcast"
+msgstr ""
+
+#: inc/meta-episodio.php:215
+msgid "El audio es válido, lo has introducido correctamente"
+msgstr ""
+
+#: inc/meta-episodio.php:233
+msgid ""
+"El audio no es válido, vuelve a intentarlo. Pega una URL directa a un "
+"fichero de audio MP3 o OGG"
+msgstr ""
+
+#: inc/meta-podcast-edit.php:64 inc/meta-podcast-add.php:26
+msgid "Eliminar imagen"
+msgstr ""
+
+#: taxonomy-podcast.php:36 inc/meta-podcast-edit.php:26
+#: inc/meta-podcast-add.php:123
+msgid "Email"
+msgstr ""
+
+#: functions.php:102 functions.php:106
+msgid "Episodio"
+msgstr ""
+
+#: 404.php:15
+msgid "Este enlace no existe"
+msgstr ""
+
+#: inc/meta-episodio.php:226
+msgid "Estás usando un audio en un servidor <u>externo</u>"
+msgstr ""
+
+#: inc/meta-episodio.php:289
+msgid "Estás usando un audio en un servidor <u>interno</u>"
+msgstr ""
+
+#: search.php:19
+#, php-format
+msgid "He encontrado %d coincidencias con la búsqueda"
+msgstr ""
+
+#. Author URI of the theme
+msgid "https://santiagojimenez.dev/"
+msgstr ""
+
+#. URI of the theme
+msgid "https://tympanum.dev"
+msgstr ""
+
+#: inc/meta-podcast-edit.php:38
+msgid "Imagen de portada"
+msgstr ""
+
+#: archive.php:26 search.php:36 single.php:17 page.php:17
+msgid "No existen entradas"
+msgstr ""
+
+#: search.php:24
+msgid ""
+"No has introducido ningún criterio de búsqueda. Aquí tienes todas nuestras "
+"entradas"
+msgstr ""
+
+#: functions.php:176
+msgid "Nombre de podcast"
+msgstr ""
+
+#: inc/meta-episodio.php:186
+msgid "Pega una URL directa a un fichero de audio MP3 o OGG"
+msgstr ""
+
+#: functions.php:101 functions.php:168 inc/archive-loop.php:18
+msgid "Podcast"
+msgstr ""
+
+#: functions.php:171 functions.php:172
+msgid "Podcast padre"
+msgstr ""
+
+#: functions.php:105
+msgid "Podcasting"
+msgstr ""
+
+#: functions.php:167 functions.php:177 front-page.php:71
+msgid "Podcasts"
+msgstr ""
+
+#: inc/single-loop.php:27
+msgid "Páginas"
+msgstr ""
+
+#. Author of the theme
+msgid "Santiago Jiménez"
+msgstr ""
+
+#: inc/meta-podcast-edit.php:61 inc/meta-podcast-add.php:24
+msgid "Selecciona una imagen de portada"
+msgstr ""
+
+#: inc/meta-episodio.php:174
+msgid "Seleccionar audio"
+msgstr ""
+
+#: index.php:24
+msgid "Siguiente"
+msgstr ""
+
+#: taxonomy-podcast.php:42 inc/meta-podcast-edit.php:32
+#: inc/meta-podcast-add.php:127
+msgid "Sitio web"
+msgstr ""
+
+#: inc/meta-episodio.php:258
+msgid "Sube un audio o elige uno de la biblioteca"
+msgstr ""
+
+#: inc/meta-episodio.php:161
+msgid ""
+"Sube un fichero de audio a la biblioteca o pega una URL a un fichero de "
+"audio en un servidor externo"
+msgstr ""
+
+#. Description of the theme
+msgid ""
+"Tema dedicado a la gestión y distribución de podcasts y entradas de texto "
+"por agrupaciones libres de difusión de contenido."
+msgstr ""
+
+#: functions.php:107
+msgid "Todos los episodios"
+msgstr ""
+
+#: functions.php:170
+msgid "Todos los podcasts"
+msgstr ""
+
+#: taxonomy-podcast.php:30
+msgid "Twitter"
+msgstr ""
+
+#. Name of the theme
+msgid "Tympanum"
+msgstr ""
+
+#: inc/meta-episodio.php:260
+msgid "Usar este audio"
+msgstr ""
+
+#: inc/meta-podcast-edit.php:20 inc/meta-podcast-add.php:119
+msgid "Usuario de Twitter"
+msgstr ""

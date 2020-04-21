@@ -21,7 +21,7 @@ add_theme_support('automatic-feed-links');
 add_theme_support('post-thumbnails');
 add_theme_support('custom-logo');
 
-
+load_theme_textdomain('tympanum', get_template_directory() . '/languages');
 
 function tympanum_enqueues()
 {
@@ -98,13 +98,13 @@ function tympanum_cpt_episodes()
             'menu_position' => 3,
             'menu_icon' => 'dashicons-microphone',
             'labels' => array(
-                'name' => 'Podcast',
-                'singular_name' => 'Episodio',
-                'add_new' => 'Añadir episodio',
-                'add_new_item' => 'Añadir episodio',
-                'menu_name' => 'Podcasting',
-                'name_admin_bar' => 'Episodio',
-                'all_items' => 'Todos los episodios',
+                'name' => __('Podcast', 'tympanum'),
+                'singular_name' => __('Episodio', 'tympanum'),
+                'add_new' => __('Añadir episodio', 'tympanum'),
+                'add_new_item' => __('Añadir episodio', 'tympanum'),
+                'menu_name' => __('Podcasting', 'tympanum'),
+                'name_admin_bar' => __('Episodio', 'tympanum'),
+                'all_items' => __('Todos los episodios', 'tympanum'),
             ),
             'public' => true,
             'has_archive' => true,
@@ -172,7 +172,7 @@ function tympanum_tax_podcast()
         'parent_item_colon' => __('Podcast padre', 'tympanum'),
         'edit_item' => __('Editar podcast', 'tympanum'),
         'update_item' => __('Actualizar podcast', 'tympanum'),
-        'add_new_item' => __('Añadir nuevo podcast', 'tympanum'),
+        'add_new_item' => __('Añadir podcast', 'tympanum'),
         'new_item_name' => __('Nombre de podcast', 'tympanum'),
         'menu_name' => __('Podcasts', 'tympanum'),
     );

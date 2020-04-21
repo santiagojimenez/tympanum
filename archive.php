@@ -23,7 +23,7 @@ get_header(); ?>
 			</div>
 		<?php else : ?>
 			<h2 class="loop-archive_subtitle">
-				<?php echo __('Lo siento, no existen entradas.', 'tympanum'); ?>
+				<?php echo __('No existen entradas', 'tympanum'); ?>.
 			</h2>
 		<?php endif; ?>
 	</div>

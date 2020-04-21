@@ -17,19 +17,19 @@ function tympanum_podcast_editform_termmeta($term)
 	wp_nonce_field('podcast_termmeta', 'podcast_termmeta_nonce'); ?>
 
 	<tr class="form-field tympanum-twitter-url-wrap">
-		<th scope="row"><label for="tympanum-twitter-url"><?php echo __('Twitter ID', 'tympanum'); ?></label></th>
+		<th scope="row"><label for="tympanum-twitter-url"><?php echo __('Usuario de Twitter', 'tympanum'); ?></label></th>
 		<td>
 			<input type="text" id="tympanum-twitter-url" name="tympanum-twitter-url" value="<?php echo sanitize_text_field($twitter_id); ?>" />
 		</td>
 	</tr>
 	<tr class="form-field tympanum-email-contact-wrap">
-		<th scope="row"><label for="tympanum-email-contact"><?php echo __('Dirección de email', 'tympanum'); ?></label></th>
+		<th scope="row"><label for="tympanum-email-contact"><?php echo __('Email', 'tympanum'); ?></label></th>
 		<td>
 			<input type="text" id="tympanum-email-contact" name="tympanum-email-contact" value="<?php echo sanitize_text_field($email_contact); ?>" />
 		</td>
 	</tr>
 	<tr class="form-field tympanum-external-web-page-wrap">
-		<th scope="row"><label for="tympanum-external-web-page"><?php echo __('Página web', 'tympanum'); ?></label></th>
+		<th scope="row"><label for="tympanum-external-web-page"><?php echo __('Sitio web', 'tympanum'); ?></label></th>
 		<td>
 			<input type="text" id="tympanum-external-web-page" name="tympanum-external-web-page" value="<?php echo sanitize_text_field($web_page); ?>" />
 		</td>
@@ -92,9 +92,9 @@ function tympanum_podcast_editform_termmeta($term)
 
 						// Create a new media frame
 						frame = wp.media({
-							title: 'Selecciona una imagen como portada del podcast',
+							title: <?php echo __('Selecciona una imagen de portada'); ?>,
 							button: {
-								text: 'Usar esta imagen'
+								text: <?php echo __('Usar esta imagen'); ?>
 							},
 							library: {
 								type: ['image']

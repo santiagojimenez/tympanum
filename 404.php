@@ -12,7 +12,7 @@ get_header(); ?>
 <div class="page-404">
 	<article>
 		<h2>404</h2>
-		<p><?php echo __('Lo siento, este enlace ya no existe.', 'tympanum'); ?></p>
+		<p><?php echo __('Este enlace no existe', 'tympanum'); ?>.</p>
 	</article>
 </div>
 <?php get_footer(); ?>

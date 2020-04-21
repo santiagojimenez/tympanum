@@ -16,12 +16,12 @@ global $wp_query; ?>
 			<?php if (get_search_query() != '') : ?>
 				<?php
 					$num_posts = $wp_query->found_posts;
-					$format = __('He encontrado %d coincidencias con la búsqueda');
-					echo sprintf($format, $num_posts);
+					$string = __('He encontrado %d coincidencias con la búsqueda', 'tympanum');
+					echo sprintf($string, $num_posts);
 					echo ': ';
 					the_search_query(); ?>
 			<?php else : ?>
-				<?php echo __('No has introducido ningún criterio de búsqueda. Aquí tienes todas nuestras entradas.', 'tympanum'); ?>
+				<?php echo __('No has introducido ningún criterio de búsqueda. Aquí tienes todas nuestras entradas', 'tympanum'); ?>.
 			<?php endif; ?>
 		</h1>
 		<?php if (have_posts()) : ?>
@@ -33,7 +33,7 @@ global $wp_query; ?>
 			<?php tympanum_navigation(); ?>
 		<?php else : ?>
 			<h2 class="loop-archive_subtitle">
-				<?php echo __('Lo siento, no existen entradas.', 'tympanum'); ?>
+				<?php echo __('No existen entradas', 'tympanum'); ?>.
 			</h2>
 		<?php endif; ?>
 	</div>

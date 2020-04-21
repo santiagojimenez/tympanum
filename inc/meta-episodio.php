@@ -158,7 +158,7 @@ function utm_post_class_meta_box($post)
 	<div>
 		<div id="tympanum_audio_preview" class="tympanum_audio_preview">
 			<div id="tympanum_audio_intro" <?php if ($tympanum_episode_vars["episode_audio_src"]) echo 'style="display: none;"' ?>>
-				<p><?php echo __('Sube un fichero de audio a la biblioteca o pega una URL a un fichero de audio en un servidor externo.', 'tympanum'); ?></p>
+				<p><?php echo __('Sube un fichero de audio a la biblioteca o pega una URL a un fichero de audio en un servidor externo', 'tympanum'); ?>.</p>
 			</div>
 			<div id="audio_player" <?php if (!$tympanum_episode_vars["episode_audio_src"]) echo 'style="display: none;"' ?>>
 				<audio src="<?php echo $tympanum_episode_vars['episode_audio_src'] ?>" controls>
@@ -183,7 +183,7 @@ function utm_post_class_meta_box($post)
 				<p>
 					<input id="audio_external_input" value="" type="url"><input id="audio_external_submit" class="button components-button is-primary" type="submit" value="Validar">
 				</p>
-				<p id="audio_external_notifications"><?php echo __('Pega una URL directa a un fichero de audio MP3 o OGG.', 'tympanum'); ?></p>
+				<p id="audio_external_notifications"><?php echo __('Pega una URL directa a un fichero de audio MP3 o OGG', 'tympanum'); ?>.</p>
 			</form>
 		</div>
 	</div>
@@ -212,7 +212,7 @@ function utm_post_class_meta_box($post)
 					value = arr[0];
 					var audio_extension = value.slice(-4);
 					if (audio_extension === '.mp3' || audio_extension === '.ogg') {
-						$('#audio_external_notifications').html('El audio es válido, lo has introducido correctamente.');
+						$('#audio_external_notifications').html(<?php echo __('El audio es válido, lo has introducido correctamente', 'tympanum'); ?>.);
 						$('#audio_external_notifications').css({
 							'background-color': '#eff9f1',
 							'padding': '15px 15px 15px 25px',
@@ -223,14 +223,14 @@ function utm_post_class_meta_box($post)
 						$('#audio_external').val(value);
 						$('.external-audio-modal-wrap').hide();
 						$('#tympanum_audio_attachment').val(value);
-						$('#tympanum_audio_prev').html('Estás usando un audio en un servidor <u>externo</u>.');
+						$('#tympanum_audio_prev').html(<?php echo __('Estás usando un audio en un servidor <u>externo</u>', 'tympanum'); ?>.);
 						$('#audio_external_input').val('');
 						$('#audio_player').html('<audio src="' + value + '" controls />');
 						$('#tympanum_audio_intro').hide();
 						$('#audio_player').show();
 						$('#tympanum_audio_prev').show();
 					} else {
-						$('#audio_external_notifications').html('El audio no es válido, vuelve a intentarlo. Pega una URL directa a un fichero de audio MP3 o OGG.');
+						$('#audio_external_notifications').html(<?php echo __('El audio no es válido, vuelve a intentarlo. Pega una URL directa a un fichero de audio MP3 o OGG', 'tympanum'); ?>.);
 						$('#audio_external_notifications').css({
 							'background-color': '#FBEAEA',
 							'padding': '15px 15px 15px 25px',
@@ -255,9 +255,9 @@ function utm_post_class_meta_box($post)
 
 
 			frame = wp.media({
-				title: 'Sube un audio o elige uno de la biblioteca',
+				title: <?php echo __('Sube un audio o elige uno de la biblioteca', 'tympanum'); ?>,
 				button: {
-					text: 'Usar este audio'
+					text: <?php echo __('Usar este audio', 'tympanum'); ?>
 				},
 				library: {
 					type: ['audio']
@@ -286,7 +286,7 @@ function utm_post_class_meta_box($post)
 
 
 				// Send URL to prev (This val not saving in database)
-				tympanum_audio_prev.html('Estás usando un audio en un servidor <u>interno</u>.');
+				tympanum_audio_prev.html(<?php echo __('Estás usando un audio en un servidor <u>interno</u>', 'tympanum'); ?>.);
 
 				// Function to converse bps in kbps before send to bitrate container
 				function bitrateToKbps() {

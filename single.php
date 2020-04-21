@@ -14,7 +14,7 @@ get_header(); ?>
 			<?php get_template_part('inc/single-loop'); ?>
 		<?php endwhile;
 		else : ?>
-		<h1><?php echo __('Lo lamento, nada he hallado.', 'tympanum'); ?></h1>
+		<h1><?php echo __('No existen entradas', 'tympanum'); ?>.</h1>
 	<?php endif; ?>
 </div>
 <?php get_footer(); ?>

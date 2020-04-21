@@ -24,7 +24,7 @@
 		the_content();
 		wp_link_pages(
 			array(
-				'before' => '<div class="page-links">' . __('Páginas:', 'tympanum'),
+				'before' => '<div class="page-links">' . __('Páginas', 'tympanum') . ':',
 				'after'  => '</div>',
 			)
 		);

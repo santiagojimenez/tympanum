@@ -116,15 +116,15 @@ function tympanum_podcast_addform_termmeta()
 		</div>
 	</div>
 	<div class="form-field tympanum-twitter-url-wrap">
-		<label for="tympanum-twitter-url"><?php echo __('Twitter ID', 'tympanum'); ?></label>
+		<label for="tympanum-twitter-url"><?php echo __('Usuario de Twitter', 'tympanum'); ?></label>
 		<input type="text" id="tympanum-twitter-url" name="tympanum-twitter-url" value="" />
 	</div>
 	<div class="form-field tympanum-email-contact-wrap">
-		<label for="tympanum-email-contact"><?php echo __('Dirección email', 'tympanum'); ?></label>
+		<label for="tympanum-email-contact"><?php echo __('Email', 'tympanum'); ?></label>
 		<input type="text" id="tympanum-email-contact" name="tympanum-email-contact" value="" />
 	</div>
 	<div class="form-field tympanum-external-web-page-wrap">
-		<label for="tympanum-external-web-page"><?php echo __('Página web', 'tympanum'); ?></label>
+		<label for="tympanum-external-web-page"><?php echo __('Sitio web', 'tympanum'); ?></label>
 		<input type="text" id="tympanum-external-web-page" name="tympanum-external-web-page" value="" />
 	</div>
 

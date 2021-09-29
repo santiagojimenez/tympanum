@@ -1,4 +1,4 @@
-# Tympanum
+# 🎙🦻🏻🩸👳🏻‍♂️ Tympanum 👳🏻‍♂️🩸🦻🏻🎙
 
 Tympanum is a WordPress theme inspired by the original blogs of the old rock radio shows.
 
@@ -6,7 +6,7 @@ Its development is aimed at its integration into the official WordPress themes s
 
 ## How to install
 
-Copy files from this repository to a folder inside wp-content/themes and activate it from the WordPress control panel
+Copy files from this repository to a folder inside wp-content/themes and activate it from the WordPress control panel.
 
 ## How to develop
 
@@ -23,4 +23,4 @@ Copy files from this repository to a folder inside wp-content/themes and activat
 
 - [Tympanum Site](https://tympanum.sjim.dev/)
 - [Blog](https://blog.sjim.dev/tympanum/)
-- [Santiago Jiménez](https://sjim.dev/)
+- [Santiago Jiménez](https://santiagojimenez.dev/)

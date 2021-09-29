@@ -13,5 +13,44 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: tympanum
 This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
+Use it to make something cool, have fun, and share what you've learned
+with others.
 */
+
+:root {
+	--color-primary: #0061b0;
+	--color-secondary: #b00067;
+	--color-tertiary: #0c0c0c;
+	font-size: 16px;
+}
+
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 1rem;
+	line-height: 1.5;
+	color: var(--color-tertiary);
+}
+
+h1 {
+	font-size: 2.5rem;
+}
+
+h2 {
+	font-size: 2rem;
+}
+
+h3 {
+	font-size: 1.5rem;
+}
+
+h4 {
+	font-size: 1.25rem;
+}
+
+h5 {
+	font-size: 1rem;
+}
+
+h6 {
+	font-size: 0.875rem;
+}
